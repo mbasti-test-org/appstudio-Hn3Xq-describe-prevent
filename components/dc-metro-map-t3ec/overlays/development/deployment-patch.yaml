@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-t3ec
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/mbasti-test-org/happy-depl-kpno-tenant/appstudio/dc-metro-map-t3ec@sha256:79b25c45edaf55f88374136f57365dbe780af2df5739b26c6c760d3aadc557b4
+        name: my-nodejs
+        resources: {}
+status: {}
